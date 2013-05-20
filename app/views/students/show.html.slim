@@ -1,6 +1,11 @@
-div
-  = @student.data
-div
-  = @student.matricula
-div
-  = @student.calculate_gpa
+.row-fluid
+  h1 Calcular GPA
+form action="index" method="get"
+  .row-fluid
+    label Matricula:
+    input type="text" name="matricula" placeholder="20100000"
+  .row-fluid
+    button.btn.btn-success type="submit" Consultar
+.row-fluid
+  #student-data
+    == render 'show_gpa' unless @student.nil?

@@ -1,0 +1,19 @@
+.row-fluid
+  .span8.well
+    .row-fluid
+      .span2 
+        h4 
+          strong Estudiante: 
+      .span10
+        h4 
+          | #{@student.firstname} #{@student.lastname}
+    .row-fluid
+      .span2 
+        h4 
+          strong Matricula: 
+      .span10
+        h4 
+          |  #{@student.matricula}
+  .span4.well.text-center
+    h4 G.P.A.
+    h2 = @student.calculate_gpa

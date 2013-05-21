@@ -16,4 +16,6 @@
           |  #{@student.matricula}
   .span4.well.text-center
     h4 G.P.A.
-    h2 = @student.calculate_gpa
+    h2 = '%.2f' % @student.calculate_gpa
+/.row-fluid
+/  = @student.to_json

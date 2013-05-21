@@ -4,8 +4,4 @@ class StudentsController < ApplicationController
       @student= Student.new(params[:matricula])
     end
   end
-  def show
-    @student= Student.new(params[:matricula])
-    #render :json => @student
-  end
 end

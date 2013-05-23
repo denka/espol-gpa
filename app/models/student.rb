@@ -47,6 +47,7 @@ class Student
       credits+=c.credits
       grades+=(c.gpa_scale*c.credits.to_f)
     end
+    #credits=self.credits.sum
     return grades/credits.to_f
   end
 end

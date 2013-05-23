@@ -17,5 +17,18 @@
   .span4.well.text-center
     h4 G.P.A.
     h2 = '%.2f' % @student.calculate_gpa
-/.row-fluid
-/  = @student.to_json
+  h4 Detalle de las materias
+  table.table
+    tr
+      th Codigo de Materia
+      th Materia
+      th Promedio
+      th escala GPA
+      th Creditos
+    - for course in @student.courses
+      tr
+        td= course.code
+        td= course.name
+        td= course.grade_average
+        td= course.gpa_scale_letter
+        td= course.credits

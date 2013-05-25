@@ -12,3 +12,18 @@
  *= require_tree .
  */
 @import "bootstrap_and_overrides";
+body{
+
+}
+#logo {
+  position:fixed;
+  right:0px;
+  top:0px;
+  height:180px;
+  width:100%;
+  background-image:url('logo_taws.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  z-index: -100;
+}

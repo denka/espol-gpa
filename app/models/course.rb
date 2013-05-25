@@ -1,5 +1,5 @@
 class Course
-  attr_accessor :id, :code, :name, :credits, :grade1, :grade2, :grade3, :grade_average, :term, :year, :code2
+  attr_accessor :id, :code, :name, :credits, :grade_average, :term, :year, :code2
   def gpa_scale
     if self.grade_average >=9
       return 4

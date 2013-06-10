@@ -1,0 +1,47 @@
+#myModal.modal.hide.fade
+  .modal-header
+    button.close aria-hidden="true" data-dismiss="modal" type="button"
+    h3 Detalles del cálculo
+  .modal-body
+    p 
+      ' Para realizar el cálculo se múltiplica la nota de cada cada materia en escala 4 por el número de créditos de la materia, el resultado es dividido para el número total de créditos de todas las materias:
+    table.table.table-bordered
+      tr
+        th Escala 4
+        th Escala 10
+        th Nota
+      tr
+        td 4.0
+        td 94-100
+        td A+
+      tr
+        td 3.9
+        td 85-93
+        td A
+      tr
+        td 3.7
+        td 80-84
+        td A-
+      tr
+        td 3.3
+        td 75-79
+        td B+
+      tr
+        td 3.0
+        td 70-74
+        td B
+      tr
+        td 2.7
+        td 65-69
+        td B-
+      tr
+        td 2.3
+        td 60-64
+        td C+
+    .detalle
+      ' Fuente:
+      a href="http://studentsuccess.mcmaster.ca/resources/gpa-conversion-chart.html" Tabla de Conversión
+  .modal-footer
+    p
+      ' Desarrollado por:
+      a href="mailto:denisse.cayetano@gmail.com" Denk

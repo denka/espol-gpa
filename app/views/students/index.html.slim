@@ -1,11 +1,15 @@
+= render 'modal_details'
 .page-header
   h1 
-    | Calcular G.P.A. 
-    small  Grade Point Average
+    ' Calcular G.P.A. 
+    small  
+      ' Grade Point Average
 .alert.alert-info
   button type="button" class="close" data-dismiss="alert" &times;
   strong Qu&eacute; es G.P.A.?
-  p Una Calificación Acumulativa Promedio es el GPA por todos los cursos tomados durante el programa de títulos. La mayoría de las universidades usan una escala de GPA de 4.0. Para calcular el GPA se debe multiplicar el valor numérico asignado a cada letra que se reciba como calificación cada curso por el número de créditos que cada curso representa.    
+  p 
+    ' Una Calificación Acumulativa Promedio es el GPA por todos los cursos tomados durante el programa de títulos. La mayoría de las universidades usan una escala de GPA de 4.0. Para calcular el GPA se debe multiplicar el valor numérico asignado a cada letra que se reciba como calificación cada curso por el número de créditos que cada curso representa. 
+    a data-toggle="modal" href="#myModal" (Ver Detalles del cálculo)   
 = form_tag({controller: "students", action:"index"}, method: "get", class: "form-horizontal") do
   label for="matricula" Matricula:
   input type="text" name="matricula" placeholder="20100000" value="#{params[:matricula] unless params[:matricula].nil?}"

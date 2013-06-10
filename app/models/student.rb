@@ -8,9 +8,9 @@ class Student
     response = client.request :web, :creditos_estudiante, body: { "codigoEstudiante" => matricula, "codigoDivision" => '', "codigoCarrera" => '', "codigoEspecializacion" => '' }
     data = response.to_hash[:creditos_estudiante_response][:creditos_estudiante_result]
     #@data=raw_data
-    #@firstname=data[:nombres]
-    #@lastname=data[:apellidos]
-    #@career=data[:nombre_carrera]
+    @firstname=data[:nombres]
+    @lastname=data[:apellidos]
+    @career=data[:nombre_carrera]
     
     @matricula=matricula
     @credits= Hash.new

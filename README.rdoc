@@ -5,4 +5,4 @@ Espol
 link:http://www.espol.edu.ec/
 
 Puedes encontrar la aplicación en:
-link:http://www.espol-gpa.herokuapp.com
+link:http://espol-gpa.herokuapp.com/

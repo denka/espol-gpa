@@ -37,8 +37,11 @@
       p 
         ' ** El presente cálculo no representa un documento oficial de Espol.
   .modal-footer
-    p
-      ' Desarrollado por:
-      a.twitter-follow-button data-show-count="false" href="https://twitter.com/_denk"
-      javascript:
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    .row-fluid
+      .span8
+        ' Desarrollado por:
+        a href="mailto:denisse.cayetano@gmail.com" target="_blank" Denk
+      .span4
+        a.twitter-share-button data-lang="es" data-via="_denk" href="https://twitter.com/share"
+        javascript:
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

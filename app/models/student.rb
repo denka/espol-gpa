@@ -2,7 +2,7 @@ class Student
   attr_reader :matricula,:firstname, :lastname, :career, :division, :courses, :credits
 
   def initialize(matricula)
-    client = Savon::Client.new("https://www.academico.espol.edu.ec/Services/wsSAAC.asmx?WSDL")
+    client = Savon::Client.new("https://ws.espol.edu.ec/saac/wsSAAC.asmx?WSDL")
     response = client.request :web, :materias_malla_aprobadas, body: { :matricula => matricula }
     raw_data = response.to_hash[:materias_malla_aprobadas_response][:materias_malla_aprobadas_result][:diffgram][:new_data_set][:v_materias_acreditadas]
     response = client.request :web, :creditos_estudiante, body: { "codigoEstudiante" => matricula, "codigoDivision" => '', "codigoCarrera" => '', "codigoEspecializacion" => '' }
